@@ -1,17 +1,22 @@
 # Deno API Example
 
-This project is a simple RESTful API made using Deno and Oak.
+This is a simple REST API using Deno, Oak and PostgreSQL.
 
-## Run 
+Make sure to install the [PostgreSQL](https://postgresql.org) and edit the `config.ts` file with your own credentials (user, database name and password).
 
-`deno run --allow-net server.ts`
+## Run
+
+```sh
+denon start
+# this project uses Denon
+```
 
 ## Routes
 
 ```sh
-GET /api/products
-GET /api/products/:id
-POST /api/products
-PUT /api/products/:id
-DELETE /api/products/:id
+GET        /api/products
+GET        /api/products/:id
+POST       /api/products
+PUT        /api/products/:id
+DELETE     /api/products/:id
 ```
